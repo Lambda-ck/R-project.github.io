@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: docs
+website:
+  title: "R project"
+  
+  navbar:
+    background: primary
+    search: false
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Statistique descriptive"
+        href: statistique.qmd
+      - text: "Analyse de données"
+        href: analyse.qmd
+        
+    sidebar: 
+      - title: "author"
+        style: "docked"
+        background: light
+        contents:
+          - text: "-hello-"
+            href: hello.qmd
+        
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+
